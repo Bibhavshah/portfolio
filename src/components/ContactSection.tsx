@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { profile, socials } from "@/data/portfolio";
+import { JSX, useState } from "react";
+import { profile, socials, type SocialIcon } from "@/data/portfolio";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send, CheckCircle2 } from "lucide-react";
 import FadeIn from "./FadeIn";
 
-const ICON_MAP: Record<string, JSX.Element> = {
+
+const ICON_MAP: Record<SocialIcon, React.ReactNode> = {
     github: <Github size={18} />,
     linkedin: <Linkedin size={18} />,
     twitter: <Twitter size={18} />,

@@ -2,6 +2,14 @@
 // Portfolio Data  ·  Bibhav Shah
 // ─────────────────────────────────────────────────────────────────────────────
 
+export type SocialIcon = "github" | "linkedin" | "twitter";
+
+type Social = {
+    label: string;
+    href: string;
+    icon: SocialIcon;
+};
+
 export const profile = {
     name: "Bibhav Shah",
     initials: "BS",
@@ -18,9 +26,9 @@ export const profile = {
     resume: "https://drive.google.com/file/d/1Vwex7Xow_QfDCpGhn_4aHCvqYs_XEDF5/view",
 };
 
-export const socials = [
+export const socials: Social[] = [
     { label: "GitHub", href: "https://github.com/Bibhavshah", icon: "github" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/bibhavshah", icon: "linkedin" }, // ← update if different
+    { label: "LinkedIn", href: "https://linkedin.com/in/bibhav-shah", icon: "linkedin" },
     { label: "Twitter", href: "https://twitter.com/bibhavsah", icon: "twitter" },
 ];
 

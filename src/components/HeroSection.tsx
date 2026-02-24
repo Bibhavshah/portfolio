@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import FadeIn from "./FadeIn";
 
-const ICON_MAP: Record<string, JSX.Element> = {
+const ICON_MAP: Record<string, React.ReactNode> = {
     github: <Github size={16} />,
     linkedin: <Linkedin size={16} />,
     twitter: <Twitter size={16} />,
